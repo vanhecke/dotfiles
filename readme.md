@@ -11,6 +11,7 @@ Things I use on el capitan:
 
 **Procedure**:
 
+0. `./defaults.sh` if you want
 1. Install iterm2.app
 2. Install homebrew
 3. Install homebrew packages (look below)
