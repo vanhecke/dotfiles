@@ -73,10 +73,12 @@ There is also extra command completion for:
 - `defaults write com.apple.TextEdit PlainTextEncoding -int 4` use utf8
 - `defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4` use utf8
 <hr>
+
 ### brew packages
-`
-brew install binutils
-brew install binwalk
+
+```
+brew install binutils    
+brew install binwalk    
 brew install caskroom/cask/brew-cask
 brew install coreutils
 brew install dex2jar
@@ -111,4 +113,4 @@ brew install thefuck
 brew install unrar
 brew install wget --with-iri --with-libressl
 brew install z
-brew tap homebrew/services`
+brew tap homebrew/services```
