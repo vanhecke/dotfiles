@@ -49,36 +49,48 @@ There is also extra command completion for:
 <hr>
 ## defaults (defaults.sh)
 #### System
-- `sudo nvram SystemAudioVolume=" "` disable startup sound
-- `sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName` Show IP, OS version, etc. when clicking the login window clock
-- `defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true` expand save panel by default
-- `defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false` disable smart quoutes
-- `defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false` disable smart dashes
-- `defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true` .DS Dont Write on Network Stores
-- `sudo systemsetup -setrestartfreeze on` restart on freeze
-
+Disable startup sound    
+`sudo nvram SystemAudioVolume=" "`    
+Show IP, OS version, etc. when clicking the login window clock    
+`sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName`    
+Expand save panel by default    
+`defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true`     
+Disable smart quotes    
+`defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false`    
+Disable smart dashes     
+`defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false`     
+.DS Dont Write on Network Stores    
+`defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true`     
+Restart on freeze    
+`sudo systemsetup -setrestartfreeze on`    
 
 #### Finder
-- `defaults write com.apple.finder CreateDesktop false` disable desktop icons
-- `defaults write com.apple.Finder AppleShowAllFiles YES` show hidden files in finder
-- `defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false` disable warning on extension change
-- `defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"` set finder views to List
-- `defaults write com.apple.finder QLEnableTextSelection -bool true` QuickLook Enable Text Selection
+Disable desktop icons    
+`defaults write com.apple.finder CreateDesktop false`    
+Show hidden files in finder    
+`defaults write com.apple.Finder AppleShowAllFiles YES`    
+Disable warning on extension change    
+`defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`    
+Set finder views to List    
+`defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"`    
+QuickLook Enable Text Selection    
+`defaults write com.apple.finder QLEnableTextSelection -bool true`    
 
 #### Mail
-- `defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false` only copy the email to clipboard
+Only copy the email to clipboard    
+`defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false`    
 
 #### TextEdit
-- `defaults write com.apple.TextEdit RichText -int 0` use simple .txt in stead of richtext by default
-- `defaults write com.apple.TextEdit PlainTextEncoding -int 4` use utf8
-- `defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4` use utf8
+Use simple .txt in stead of richtext by default    
+`defaults write com.apple.TextEdit RichText -int 0`     
+Use utf8    
+`defaults write com.apple.TextEdit PlainTextEncoding -int 4`     
+`defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`    
 <hr>
-
 ### brew packages
-
 ```
-brew install binutils    
-brew install binwalk    
+brew install binutils
+brew install binwalk
 brew install caskroom/cask/brew-cask
 brew install coreutils
 brew install dex2jar
@@ -113,4 +125,4 @@ brew install thefuck
 brew install unrar
 brew install wget --with-iri --with-libressl
 brew install z
-brew tap homebrew/services```
+brew tap homebrew/services`
